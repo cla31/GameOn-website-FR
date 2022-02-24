@@ -320,6 +320,16 @@ fullForm.addEventListener('submit', (e) => {
     quantityValue = quantityInput.value;
     termsUseValue = choiceInput.value;
 
+    // Envoi des valeurs de chaque champ (input) vers la fonction de test et validation
+    // Repère tous les champs vide au submit
+    firstLastChecker(firstValue, "first");
+    firstLastChecker(lastValue, "last");
+    emailChecker(emailValue, "email");
+    birthdayChecker(birthdayValue, "birthdate");
+    quantityChecker(quantityValue, "number");
+    checkboxChecker(checkBoxValue);
+    termsUseChecker(termsUseValue, "checkbox1");
+
     if (firstLastChecker(firstValue, "first") &&
         firstLastChecker(lastValue, "last") &&
         emailChecker(emailValue, "email") &&

@@ -578,10 +578,10 @@ input {
   visibility: visible;
   opacity: 1;
   color: red;
-  font-size: 10px;
+  font-size: 12px;
 }
 
-/* Media queries à 337px : ajustment de l'interligne sur les cases à cocher */
+/* Media queries à 337px : ajustement de l'interligne sur les cases à cocher */
 @media screen and (max-width: 337px) {
   .location-formData {
     margin-bottom: 20px;
