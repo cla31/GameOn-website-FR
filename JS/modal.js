@@ -336,7 +336,6 @@ fullForm.addEventListener('submit', (e) => {
         quantityChecker(quantityValue, "number") &&
         checkboxChecker(checkBoxValue) &&
         termsUseChecker(termsUseValue, "checkbox1")) {
-        // alert("Merci! Votre réservation a été reçue!");
         //Fermeture de la Modale
         closeWindow();
         // Effacement des champs du formulaire
@@ -359,11 +358,7 @@ fullForm.addEventListener('submit', (e) => {
             blocThanks.style.display = "none";
         }
 
-    } else {
-        alert("Remplir les champs correctement!");
-
-
-    };
+    }
 
 });
 
