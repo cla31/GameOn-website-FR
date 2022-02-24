@@ -45,7 +45,6 @@ closeWindowBtn.addEventListener("click", closeWindow);
 // Fermeture du Formulaire
 function closeWindow() {
     modalFrame.style.display = "none";
-    document.getElementById("form").reset(); // Effacement des champs à la fermeture de la Modale
 }
 
 // -------GESTION DE LA FENETRE REMERCIEMENTS-------------------------------------------------------
@@ -336,8 +335,8 @@ fullForm.addEventListener('submit', (e) => {
         birthdayChecker(birthdayValue, "birthdate") &&
         quantityChecker(quantityValue, "number") &&
         checkboxChecker(checkBoxValue) &&
-        termsUseChecker(termsUseValue, "checkbox1") == true) {
-        alert("Merci! Votre réservation a été reçue!");
+        termsUseChecker(termsUseValue, "checkbox1")) {
+        // alert("Merci! Votre réservation a été reçue!");
         //Fermeture de la Modale
         closeWindow();
         // Effacement des champs du formulaire
@@ -362,6 +361,7 @@ fullForm.addEventListener('submit', (e) => {
 
     } else {
         alert("Remplir les champs correctement!");
+
 
     };
 
